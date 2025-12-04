@@ -64,6 +64,17 @@ with col2:
         webbrowser.open("https://bhavishya-e80x.onrender.com/")
         st.success("Opening Bhavishya in your browser! 🎉")
 
+    # Show the direct link visibly under the button so users can copy or open it manually
+    st.markdown("""
+    <div style="text-align:center; margin-top:0.5rem;">
+    <small>Direct link: </small>
+    <a href="https://bhavishya-e80x.onrender.com/" target="_blank">https://bhavishya-e80x.onrender.com/</a>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Also show the plain URL for easy copy-paste
+    st.code("https://bhavishya-e80x.onrender.com/")
+
 st.markdown("---")
 
 # Introduction
